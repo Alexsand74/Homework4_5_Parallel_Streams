@@ -74,6 +74,13 @@ public class StudentController {
     @GetMapping("/lastStudents/{count}")
     public Collection<Student> lastStudents(@PathVariable int count) {
         return service.lastStudents(count);
+    }    @GetMapping("/studentsFirstLetterA")
+    public Collection<String> getStudentNameStartsA () {
+        return service.getStudentNameStartsA();
+    }
+    @GetMapping("/averageAgeStudentWithStreams")
+    public double getAverageAgeStudentsInSchoolWithStreams() {
+        return service.averageAgeStudentsInSchoolWithStreams();
     }
 }
 
