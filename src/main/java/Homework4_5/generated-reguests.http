@@ -106,3 +106,9 @@ GET http://localhost:8080/faculty/longestFacultyName
 #Выполняется четвертое задание со стримом 1_000_000 (a, b) -> a + b)
 GET http://localhost:8080/info/getIntegerValue
 ###
+# Возвращает имена студентов в 3х потоках не синхронизированных между собой по два имени
+GET http://localhost:8080/student/printNonSync
+###
+# Возвращает имена студентов в 3х потоках синхронизированных между собой по два имени
+GET http://localhost:8080/student/printSync
+###
