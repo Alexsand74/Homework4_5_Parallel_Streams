@@ -94,3 +94,21 @@ GET http://localhost:8080/student/averageAge
 # Возвращает количество студентов начиная с последнего
 GET http://localhost:8080/student/lastStudents/8
 ###
+#Возвращает имена студентов начинающиеся на букву А в отсортированном виде6
+GET http://localhost:8080/student/studentsFirstLetterA
+###
+#Возвращает средний возраст всех студентов
+GET http://localhost:8080/student/averageAgeStudentWithStreams
+###
+#Возвращает самое длинное название факультета
+GET http://localhost:8080/faculty/longestFacultyName
+###
+#Выполняется четвертое задание со стримом 1_000_000 (a, b) -> a + b)
+GET http://localhost:8080/info/getIntegerValue
+###
+# Возвращает имена студентов в 3х потоках не синхронизированных между собой по два имени
+GET http://localhost:8080/student/printNonSync
+###
+# Возвращает имена студентов в 3х потоках синхронизированных между собой по два имени
+GET http://localhost:8080/student/printSync
+###
